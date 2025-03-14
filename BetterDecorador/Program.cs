@@ -43,7 +43,13 @@ namespace BetterDecorador
             Console.WriteLine(Decor(text, decorator, repeat));
         }
 
-      
+        /// <summary>
+        /// Decora uma determinada string circundando-a com um caractere repetido.
+        /// </summary>
+        /// <param name="s">O texto onde se aplicara o decorated.</param>
+        /// <param name="dec">O caracter usado para o decoration.</param>
+        /// <param name="count"> Número de vezes em que o character com a decoration deveria repetir.</param>
+        /// <returns>Uma string formatada com a decoration aplicada nela. </returns>
         private static string Decor(string s, char dec, int count)
         {
             string decoration = new string(dec, count);
